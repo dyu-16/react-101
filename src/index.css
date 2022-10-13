@@ -1,32 +1,77 @@
 body {
   margin: 0;
+}
+
+#root {
+  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(37, 34, 34);
+  color: white;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Inter', sans-serif;
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: ghostwhite;
+  background-color: rgb(27, 27, 32);
+  padding: 1em;
 }
 
 .nav-logo {
   width: 60px;
 }
 
-.nav-items {
+/* .nav-items {
   list-style: none;
   display: flex;
 }
 
 .nav-items > li {
   padding: 10px;
+} */
+
+.reactSymbol {
+  display: flex;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.reactFacts {
+  color: rgb(91, 213, 241);
+  font-size: 1.5rem;  
+  font-weight: bold;
+}
+
+.main {
+  padding: 1.5em;
+  height: 100vh;
+  background-image: url(/Users/megatron/Desktop/Code/react-101/src/images/reactBackground.jpg);
+  background-size: contain;
+  background-position: center;
+}
+
+.main-items > li::before {content: "•"; color: red;
+  display: inline-block; width: 1em;
+  margin-left: -1em}
+
+.foot {
+  padding: 1rem 1rem;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
 }
